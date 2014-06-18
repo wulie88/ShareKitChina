@@ -16,22 +16,21 @@
 		B300314C1951341B002B37D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B300314A1951341B002B37D3 /* Main.storyboard */; };
 		B300314F1951341B002B37D3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B300314E1951341B002B37D3 /* ViewController.m */; };
 		B30031511951341B002B37D3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B30031501951341B002B37D3 /* Images.xcassets */; };
-		B30031581951341B002B37D3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B30031571951341B002B37D3 /* XCTest.framework */; };
-		B30031591951341B002B37D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B30031381951341B002B37D3 /* Foundation.framework */; };
-		B300315A1951341B002B37D3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B300313C1951341B002B37D3 /* UIKit.framework */; };
-		B30031621951341B002B37D3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B30031601951341B002B37D3 /* InfoPlist.strings */; };
-		B30031641951341B002B37D3 /* ShareKitChinaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B30031631951341B002B37D3 /* ShareKitChinaTests.m */; };
+		B300318719513459002B37D3 /* QQShareRemote.m in Sources */ = {isa = PBXBuildFile; fileRef = B300317019513459002B37D3 /* QQShareRemote.m */; };
+		B300318819513459002B37D3 /* TCShareRemote.m in Sources */ = {isa = PBXBuildFile; fileRef = B300317219513459002B37D3 /* TCShareRemote.m */; };
+		B300318919513459002B37D3 /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B300317319513459002B37D3 /* TencentOpenAPI.framework */; };
+		B300318A19513459002B37D3 /* TencentOpenApi_IOS_Bundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B300317419513459002B37D3 /* TencentOpenApi_IOS_Bundle.bundle */; };
+		B300318B19513459002B37D3 /* ExternalShare.m in Sources */ = {isa = PBXBuildFile; fileRef = B300317619513459002B37D3 /* ExternalShare.m */; };
+		B300318C19513459002B37D3 /* ExternalShareObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B300317819513459002B37D3 /* ExternalShareObject.m */; };
+		B300318D19513459002B37D3 /* ExternalShareRemote.m in Sources */ = {isa = PBXBuildFile; fileRef = B300317A19513459002B37D3 /* ExternalShareRemote.m */; };
+		B300318E19513459002B37D3 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B300317C19513459002B37D3 /* libWeChatSDK.a */; };
+		B300318F19513459002B37D3 /* WXShareRemote.m in Sources */ = {isa = PBXBuildFile; fileRef = B300318019513459002B37D3 /* WXShareRemote.m */; };
+		B300319019513459002B37D3 /* libWeiboSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B300318219513459002B37D3 /* libWeiboSDK.a */; };
+		B300319119513459002B37D3 /* WBShareRemote.m in Sources */ = {isa = PBXBuildFile; fileRef = B300318419513459002B37D3 /* WBShareRemote.m */; };
+		B300319219513459002B37D3 /* WeiboSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B300318519513459002B37D3 /* WeiboSDK.bundle */; };
+		B300319519513F1E002B37D3 /* ShareSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = B300319419513F1E002B37D3 /* ShareSheet.m */; };
+		B300319819516229002B37D3 /* UISystemUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = B300319719516229002B37D3 /* UISystemUtil.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		B300315B1951341B002B37D3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B300312D1951341B002B37D3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B30031341951341B002B37D3;
-			remoteInfo = ShareKitChina;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		B30031351951341B002B37D3 /* ShareKitChina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShareKitChina.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,11 +47,33 @@
 		B300314D1951341B002B37D3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		B300314E1951341B002B37D3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B30031501951341B002B37D3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		B30031561951341B002B37D3 /* ShareKitChinaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShareKitChinaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B30031571951341B002B37D3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		B300315F1951341B002B37D3 /* ShareKitChinaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ShareKitChinaTests-Info.plist"; sourceTree = "<group>"; };
-		B30031611951341B002B37D3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		B30031631951341B002B37D3 /* ShareKitChinaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareKitChinaTests.m; sourceTree = "<group>"; };
+		B300316F19513459002B37D3 /* QQShareRemote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQShareRemote.h; sourceTree = "<group>"; };
+		B300317019513459002B37D3 /* QQShareRemote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQShareRemote.m; sourceTree = "<group>"; };
+		B300317119513459002B37D3 /* TCShareRemote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCShareRemote.h; sourceTree = "<group>"; };
+		B300317219513459002B37D3 /* TCShareRemote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCShareRemote.m; sourceTree = "<group>"; };
+		B300317319513459002B37D3 /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentOpenAPI.framework; sourceTree = "<group>"; };
+		B300317419513459002B37D3 /* TencentOpenApi_IOS_Bundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TencentOpenApi_IOS_Bundle.bundle; sourceTree = "<group>"; };
+		B300317519513459002B37D3 /* ExternalShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExternalShare.h; sourceTree = "<group>"; };
+		B300317619513459002B37D3 /* ExternalShare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExternalShare.m; sourceTree = "<group>"; };
+		B300317719513459002B37D3 /* ExternalShareObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExternalShareObject.h; sourceTree = "<group>"; };
+		B300317819513459002B37D3 /* ExternalShareObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExternalShareObject.m; sourceTree = "<group>"; };
+		B300317919513459002B37D3 /* ExternalShareRemote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExternalShareRemote.h; sourceTree = "<group>"; };
+		B300317A19513459002B37D3 /* ExternalShareRemote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExternalShareRemote.m; sourceTree = "<group>"; };
+		B300317C19513459002B37D3 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		B300317D19513459002B37D3 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		B300317E19513459002B37D3 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		B300317F19513459002B37D3 /* WXShareRemote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXShareRemote.h; sourceTree = "<group>"; };
+		B300318019513459002B37D3 /* WXShareRemote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXShareRemote.m; sourceTree = "<group>"; };
+		B300318219513459002B37D3 /* libWeiboSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeiboSDK.a; sourceTree = "<group>"; };
+		B300318319513459002B37D3 /* WBShareRemote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBShareRemote.h; sourceTree = "<group>"; };
+		B300318419513459002B37D3 /* WBShareRemote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBShareRemote.m; sourceTree = "<group>"; };
+		B300318519513459002B37D3 /* WeiboSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WeiboSDK.bundle; sourceTree = "<group>"; };
+		B300318619513459002B37D3 /* WeiboSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboSDK.h; sourceTree = "<group>"; };
+		B300319319513F1E002B37D3 /* ShareSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareSheet.h; sourceTree = "<group>"; };
+		B300319419513F1E002B37D3 /* ShareSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareSheet.m; sourceTree = "<group>"; };
+		B300319619516229002B37D3 /* UISystemUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UISystemUtil.h; sourceTree = "<group>"; };
+		B300319719516229002B37D3 /* UISystemUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UISystemUtil.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,18 +82,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B300313B1951341B002B37D3 /* CoreGraphics.framework in Frameworks */,
+				B300319019513459002B37D3 /* libWeiboSDK.a in Frameworks */,
+				B300318919513459002B37D3 /* TencentOpenAPI.framework in Frameworks */,
 				B300313D1951341B002B37D3 /* UIKit.framework in Frameworks */,
 				B30031391951341B002B37D3 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B30031531951341B002B37D3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B30031581951341B002B37D3 /* XCTest.framework in Frameworks */,
-				B300315A1951341B002B37D3 /* UIKit.framework in Frameworks */,
-				B30031591951341B002B37D3 /* Foundation.framework in Frameworks */,
+				B300318E19513459002B37D3 /* libWeChatSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,7 +97,6 @@
 			isa = PBXGroup;
 			children = (
 				B300313E1951341B002B37D3 /* ShareKitChina */,
-				B300315D1951341B002B37D3 /* ShareKitChinaTests */,
 				B30031371951341B002B37D3 /* Frameworks */,
 				B30031361951341B002B37D3 /* Products */,
 			);
@@ -93,7 +106,6 @@
 			isa = PBXGroup;
 			children = (
 				B30031351951341B002B37D3 /* ShareKitChina.app */,
-				B30031561951341B002B37D3 /* ShareKitChinaTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,11 +126,16 @@
 			children = (
 				B30031471951341B002B37D3 /* AppDelegate.h */,
 				B30031481951341B002B37D3 /* AppDelegate.m */,
+				B300316D19513459002B37D3 /* ExternalShare */,
+				B30031501951341B002B37D3 /* Images.xcassets */,
 				B300314A1951341B002B37D3 /* Main.storyboard */,
+				B300319319513F1E002B37D3 /* ShareSheet.h */,
+				B300319419513F1E002B37D3 /* ShareSheet.m */,
+				B300313F1951341B002B37D3 /* Supporting Files */,
+				B300319619516229002B37D3 /* UISystemUtil.h */,
+				B300319719516229002B37D3 /* UISystemUtil.m */,
 				B300314D1951341B002B37D3 /* ViewController.h */,
 				B300314E1951341B002B37D3 /* ViewController.m */,
-				B30031501951341B002B37D3 /* Images.xcassets */,
-				B300313F1951341B002B37D3 /* Supporting Files */,
 			);
 			path = ShareKitChina;
 			sourceTree = "<group>";
@@ -134,22 +151,57 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		B300315D1951341B002B37D3 /* ShareKitChinaTests */ = {
+		B300316D19513459002B37D3 /* ExternalShare */ = {
 			isa = PBXGroup;
 			children = (
-				B30031631951341B002B37D3 /* ShareKitChinaTests.m */,
-				B300315E1951341B002B37D3 /* Supporting Files */,
+				B300316E19513459002B37D3 /* Connect_IOS_SDK */,
+				B300317519513459002B37D3 /* ExternalShare.h */,
+				B300317619513459002B37D3 /* ExternalShare.m */,
+				B300317719513459002B37D3 /* ExternalShareObject.h */,
+				B300317819513459002B37D3 /* ExternalShareObject.m */,
+				B300317919513459002B37D3 /* ExternalShareRemote.h */,
+				B300317A19513459002B37D3 /* ExternalShareRemote.m */,
+				B300317B19513459002B37D3 /* WeChatSDK */,
+				B300318119513459002B37D3 /* WeiboSDK */,
 			);
-			path = ShareKitChinaTests;
+			path = ExternalShare;
 			sourceTree = "<group>";
 		};
-		B300315E1951341B002B37D3 /* Supporting Files */ = {
+		B300316E19513459002B37D3 /* Connect_IOS_SDK */ = {
 			isa = PBXGroup;
 			children = (
-				B300315F1951341B002B37D3 /* ShareKitChinaTests-Info.plist */,
-				B30031601951341B002B37D3 /* InfoPlist.strings */,
+				B300316F19513459002B37D3 /* QQShareRemote.h */,
+				B300317019513459002B37D3 /* QQShareRemote.m */,
+				B300317119513459002B37D3 /* TCShareRemote.h */,
+				B300317219513459002B37D3 /* TCShareRemote.m */,
+				B300317319513459002B37D3 /* TencentOpenAPI.framework */,
+				B300317419513459002B37D3 /* TencentOpenApi_IOS_Bundle.bundle */,
 			);
-			name = "Supporting Files";
+			path = Connect_IOS_SDK;
+			sourceTree = "<group>";
+		};
+		B300317B19513459002B37D3 /* WeChatSDK */ = {
+			isa = PBXGroup;
+			children = (
+				B300317C19513459002B37D3 /* libWeChatSDK.a */,
+				B300317D19513459002B37D3 /* WXApi.h */,
+				B300317E19513459002B37D3 /* WXApiObject.h */,
+				B300317F19513459002B37D3 /* WXShareRemote.h */,
+				B300318019513459002B37D3 /* WXShareRemote.m */,
+			);
+			path = WeChatSDK;
+			sourceTree = "<group>";
+		};
+		B300318119513459002B37D3 /* WeiboSDK */ = {
+			isa = PBXGroup;
+			children = (
+				B300318219513459002B37D3 /* libWeiboSDK.a */,
+				B300318319513459002B37D3 /* WBShareRemote.h */,
+				B300318419513459002B37D3 /* WBShareRemote.m */,
+				B300318519513459002B37D3 /* WeiboSDK.bundle */,
+				B300318619513459002B37D3 /* WeiboSDK.h */,
+			);
+			path = WeiboSDK;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,24 +224,6 @@
 			productReference = B30031351951341B002B37D3 /* ShareKitChina.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B30031551951341B002B37D3 /* ShareKitChinaTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B300316A1951341B002B37D3 /* Build configuration list for PBXNativeTarget "ShareKitChinaTests" */;
-			buildPhases = (
-				B30031521951341B002B37D3 /* Sources */,
-				B30031531951341B002B37D3 /* Frameworks */,
-				B30031541951341B002B37D3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B300315C1951341B002B37D3 /* PBXTargetDependency */,
-			);
-			name = ShareKitChinaTests;
-			productName = ShareKitChinaTests;
-			productReference = B30031561951341B002B37D3 /* ShareKitChinaTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -198,11 +232,6 @@
 			attributes = {
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = cnnetlab;
-				TargetAttributes = {
-					B30031551951341B002B37D3 = {
-						TestTargetID = B30031341951341B002B37D3;
-					};
-				};
 			};
 			buildConfigurationList = B30031301951341B002B37D3 /* Build configuration list for PBXProject "ShareKitChina" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -218,7 +247,6 @@
 			projectRoot = "";
 			targets = (
 				B30031341951341B002B37D3 /* ShareKitChina */,
-				B30031551951341B002B37D3 /* ShareKitChinaTests */,
 			);
 		};
 /* End PBXProject section */
@@ -228,17 +256,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B300318A19513459002B37D3 /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
 				B30031511951341B002B37D3 /* Images.xcassets in Resources */,
+				B300319219513459002B37D3 /* WeiboSDK.bundle in Resources */,
 				B30031431951341B002B37D3 /* InfoPlist.strings in Resources */,
 				B300314C1951341B002B37D3 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B30031541951341B002B37D3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B30031621951341B002B37D3 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,29 +271,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B300318C19513459002B37D3 /* ExternalShareObject.m in Sources */,
+				B300318819513459002B37D3 /* TCShareRemote.m in Sources */,
+				B300319119513459002B37D3 /* WBShareRemote.m in Sources */,
+				B300319519513F1E002B37D3 /* ShareSheet.m in Sources */,
+				B300318D19513459002B37D3 /* ExternalShareRemote.m in Sources */,
 				B300314F1951341B002B37D3 /* ViewController.m in Sources */,
+				B300318B19513459002B37D3 /* ExternalShare.m in Sources */,
 				B30031491951341B002B37D3 /* AppDelegate.m in Sources */,
 				B30031451951341B002B37D3 /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B30031521951341B002B37D3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B30031641951341B002B37D3 /* ShareKitChinaTests.m in Sources */,
+				B300318F19513459002B37D3 /* WXShareRemote.m in Sources */,
+				B300319819516229002B37D3 /* UISystemUtil.m in Sources */,
+				B300318719513459002B37D3 /* QQShareRemote.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		B300315C1951341B002B37D3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B30031341951341B002B37D3 /* ShareKitChina */;
-			targetProxy = B300315B1951341B002B37D3 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B30031411951341B002B37D3 /* InfoPlist.strings */ = {
@@ -288,14 +303,6 @@
 				B300314B1951341B002B37D3 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		B30031601951341B002B37D3 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B30031611951341B002B37D3 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -376,9 +383,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ShareKitChina/ExternalShare/Connect_IOS_SDK",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ShareKitChina/ShareKitChina-Prefix.pch";
 				INFOPLIST_FILE = "ShareKitChina/ShareKitChina-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ShareKitChina/ExternalShare/WeChatSDK",
+					"$(PROJECT_DIR)/ShareKitChina/ExternalShare/WeiboSDK",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -389,51 +405,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ShareKitChina/ExternalShare/Connect_IOS_SDK",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ShareKitChina/ShareKitChina-Prefix.pch";
 				INFOPLIST_FILE = "ShareKitChina/ShareKitChina-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ShareKitChina/ExternalShare/WeChatSDK",
+					"$(PROJECT_DIR)/ShareKitChina/ExternalShare/WeiboSDK",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		B300316B1951341B002B37D3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ShareKitChina.app/ShareKitChina";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ShareKitChina/ShareKitChina-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "ShareKitChinaTests/ShareKitChinaTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		B300316C1951341B002B37D3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ShareKitChina.app/ShareKitChina";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ShareKitChina/ShareKitChina-Prefix.pch";
-				INFOPLIST_FILE = "ShareKitChinaTests/ShareKitChinaTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
@@ -454,14 +439,6 @@
 			buildConfigurations = (
 				B30031681951341B002B37D3 /* Debug */,
 				B30031691951341B002B37D3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		B300316A1951341B002B37D3 /* Build configuration list for PBXNativeTarget "ShareKitChinaTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B300316B1951341B002B37D3 /* Debug */,
-				B300316C1951341B002B37D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

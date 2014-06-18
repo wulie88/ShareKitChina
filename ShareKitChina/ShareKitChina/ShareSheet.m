@@ -1,8 +1,8 @@
 
-#import "MgushiShareSheet.h"
+#import "ShareSheet.h"
 #import "ExternalShare.h"
 
-@implementation MgushiShareSheetGroup
+@implementation ShareSheetGroup
 
 - (void)addButtonWithTitle:(NSString *)title iconImageName:(NSString *)iconImageName
 {
@@ -17,7 +17,8 @@
 
 - (UIView*)drawToView;
 {
-    UIView *view = [[UIView alloc] initWithFrame:CGRectZero];
+    CGRect frame = CGRectZero;
+    UIView *view = [[UIView alloc] init];
     
     for (int i = 0; i < [self.titles count]; i ++) {
         NSString *title = [self.titles objectAtIndex:i];
@@ -26,9 +27,10 @@
         float x = (i % 4) * 75.0;
         float y = floor(i / 4.0) * 90.0;
         
-        UIButton *button = [UIButton buttonWithFrame:CGRectMake(x, y, 60.0, 60.0) imageName:iconImageName];
+        UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(x, y, 60.0, 60.0)];
+        [button setImage:[UIImage imageNamed:iconImageName] forState:UIControlStateNormal];
         button.tag = i;
-        [button addTouchUpInsideTarget:self action:@selector(buttonTouched:)];
+        [button addTarget:self action:@selector(buttonTouched:) forControlEvents:UIControlEventTouchUpInside];
         
         UIFont *font = [UIFont fontWithName:@"HelveticaNeue-Bold" size:11.5];
         CGSize titleSize = [title sizeWithFont:font constrainedToSize:CGSizeMake(60, 48)];
@@ -45,10 +47,11 @@
         [view addSubview:button];
         [view addSubview:label];
         
-        [view setSizeHeight:y + 90.0];
+        frame.size.height = y + 90.0;
     }
     
-    [view setSizeWidth:300];
+    frame.size.width = 300;
+    view.frame = frame;
     return view;
 }
 
@@ -59,7 +62,7 @@
 
 @end
 
-@implementation MgushiShareSheet
+@implementation ShareSheet
 
 - (id)initWithObject:(id)object otherButtonNames:(NSString *)otherButtonNames, ... NS_REQUIRES_NIL_TERMINATION;
 {
@@ -120,13 +123,13 @@
 
 - (void)addButtonWithTitle:(NSString*)title iconImageName:(NSString*)iconImageName atGroup:(NSUInteger)groupIndex;
 {
-    MgushiShareSheetGroup *group;
+    ShareSheetGroup *group;
     if (groupIndex < self.groups.count) {
         group = [self.groups objectAtIndex:groupIndex];
     }
     
     if (group == nil) {
-        group = [[MgushiShareSheetGroup alloc] init];
+        group = [[ShareSheetGroup alloc] init];
         group.index = groupIndex;
         group.delegate = self;
         [self.groups addObject:group];

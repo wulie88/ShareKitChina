@@ -7,7 +7,6 @@
 //
 
 #import "ExternalShareObject.h"
-#import "ImageUtil.h"
 
 @implementation ExternalShareObject
 
@@ -15,7 +14,6 @@
 {
     // 压缩图片
     NSData *imageData = UIImageJPEGRepresentation(self.previewImage, 0.8);
-    LOG(@"ExternalShareObject share image:%.0fK", imageData.length / 1024.0f);
     
     return imageData;
 }

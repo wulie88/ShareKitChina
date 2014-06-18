@@ -11,8 +11,6 @@
 #import "WXShareRemote.h"
 #import "objc/runtime.h"
 #import "UISystemUtil.h"
-#import "ImageUtil.h"
-#import "StringUtil.h"
 
 // 动态属性指针
 static char ExternalShareRemoteOperationKey;
@@ -25,7 +23,7 @@ static char ExternalShareRemoteOperationKey;
     _object = object;
     
     if ([NSString isEmptyOrNull:object.identifiy]) {
-        [UIAlertView showMsg:@"不支持分享"];
+        [UIAlertView showMessage:@"不支持分享"];
         return;
     }
     

@@ -8,7 +8,6 @@
 
 #import "TCShareRemote.h"
 #import "ExternalShare.h"
-#import "UISystemUtil.h"
 
 @implementation TCShareRemote
 
@@ -22,7 +21,7 @@
     
     if(NO == [[[ExternalShare instance] txOauth] sendAPIRequest:request callback:[ExternalShare instance]])
     {
-        [UIAlertView showMsg:@"授权无效或者过期"];
+        [UIAlertView showMessage:@"授权无效或者过期"];
     }
 }
 

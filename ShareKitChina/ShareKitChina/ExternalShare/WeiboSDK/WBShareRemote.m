@@ -18,7 +18,7 @@
     _object = object;
     
     if ([NSString isEmptyOrNull:object.identifiy]) {
-        [UIAlertView showMsg:@"不支持分享"];
+        [UIAlertView showMessage:@"不支持分享"];
         return;
     }
     
@@ -33,7 +33,6 @@
     image.imageData = object.previewImageData;
     
     message.text = [NSString stringWithFormat:@"%@ %@ @完美故事官微", object.content, object.url];
-    LOG(@"weibo text: %@, length:%d", message.text, message.text.length);
     message.imageObject = image;
     
     WBSendMessageToWeiboRequest *request = [WBSendMessageToWeiboRequest requestWithMessage:message];

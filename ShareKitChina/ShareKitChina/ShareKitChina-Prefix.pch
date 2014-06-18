@@ -14,3 +14,18 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
 #endif
+
+// 系统字体
+#define FONT(X)                 [UIFont systemFontOfSize:X]
+// 系统加粗字体
+#define FONTBLOD(X)             [UIFont boldSystemFontOfSize:X]
+#define RGBA(r, g, b, a)        [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
+#define RGB(r, g, b)            RGBA(r, g, b, 1)
+
+#define THUMB_FLAG(ID, FLAG)    void(ID, FLAG)
+// 缩略图
+#define THUMB(ID)               THUMB_FLAG(ID, 1)
+// 完整图
+#define IMAGE(ID)               THUMB_FLAG(ID, 2)
+// 小型缩略图
+#define THUMBMINI(ID)           THUMB_FLAG(ID, 4)

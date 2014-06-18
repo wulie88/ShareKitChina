@@ -1,27 +1,26 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MgushiActionSheet.h"
 #import "ExternalShareObject.h"
 
-@class MgushiShareSheetGroup;
-@protocol MgushiShareSheetGroupDelegate <NSObject>
+@class ShareSheetGroup;
+@protocol ShareSheetGroupDelegate <NSObject>
 /**
  *  选中其中一项
  *
  *  @param group     MgushiShareSheetGroup
  *  @param indexPath 所在的位置
  */
-- (void)shareSheetGroupDidTouch:(MgushiShareSheetGroup*)group atIdnexPath:(NSIndexPath*)indexPath;
+- (void)shareSheetGroupDidTouch:(ShareSheetGroup*)group atIdnexPath:(NSIndexPath*)indexPath;
 
 @end
 
-@interface MgushiShareSheetGroup : NSObject
+@interface ShareSheetGroup : NSObject
 
 @property (nonatomic, assign) NSUInteger index;
 @property (nonatomic, retain) NSMutableArray *titles;
 @property (nonatomic, retain) NSMutableArray *icons;
-@property (nonatomic, assign) id<MgushiShareSheetGroupDelegate> delegate;
+@property (nonatomic, assign) id<ShareSheetGroupDelegate> delegate;
 
 - (void)addButtonWithTitle:(NSString*)title iconImageName:(NSString*)iconImageName;
 
@@ -30,7 +29,7 @@
 /**
  *  分享的ActionSheet
  */
-@interface MgushiShareSheet : UIView <MgushiShareSheetGroupDelegate>
+@interface ShareSheet : UIView <ShareSheetGroupDelegate>
 {
     BOOL _isDefaultButtons;
     UIImageView *_wrap;
